@@ -23,6 +23,28 @@ A Model Context Protocol (MCP) server that lets you manipulate Excel files witho
 - 🔌 **Triple transport support**: stdio, SSE (deprecated), and streamable HTTP
 - 🌐 **Remote & Local**: Works both locally and as a remote service
 
+## Installation
+
+```bash
+# 使用 pip 安装
+pip install excel-mcp-server-bachstudio
+
+# 或使用 uvx（推荐）
+uvx --from excel-mcp-server-bachstudio excel-mcp-server stdio
+```
+
+### 如果遇到模块导入错误
+
+如果使用 uvx 时遇到 `ModuleNotFoundError`，请清除 uvx 缓存：
+
+```bash
+# 清除 uv 缓存
+uv cache clean
+
+# 或指定清除特定包
+uv cache clean excel-mcp-server-bachstudio
+```
+
 ## Usage
 
 The server supports three transport methods:
