@@ -1,6 +1,6 @@
 [project]
-name = "excel-mcp-server"
-version = "0.1.7"
+name = "excel-mcp-server-bachstudio"
+version = "0.1.8"
 description = "Excel MCP Server for manipulating Excel files"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -11,8 +11,8 @@ dependencies = [
     "typer>=0.16.0"
 ]
 [[project.authors]]
-name = "haris"
-email = "haris.musa@outlook.com"
+name = "bachstudio"
+email = "bachstudio@example.com"
 
 [project.scripts]
 excel-mcp-server = "excel_mcp.__main__:app"

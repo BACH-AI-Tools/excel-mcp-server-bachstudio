@@ -105,9 +105,9 @@ When using the **stdio protocol**, the file path is provided with each tool call
 
 The server provides a comprehensive set of Excel manipulation tools. See [TOOLS.md](TOOLS.md) for complete documentation of all available tools.
 
-## Star History
+## Credits
 
-[![Star History Chart](https://api.star-history.com/svg?repos=haris-musa/excel-mcp-server&type=Date)](https://www.star-history.com/#haris-musa/excel-mcp-server&Date)
+本项目基于原项目修改：[haris-musa/excel-mcp-server](https://github.com/haris-musa/excel-mcp-server/tree/v0.1.7)
 
 ## License
 
