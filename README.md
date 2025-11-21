@@ -30,7 +30,7 @@ A Model Context Protocol (MCP) server that lets you manipulate Excel files witho
 pip install excel-mcp-server-bachstudio
 
 # 或使用 uvx（推荐）
-uvx --from excel-mcp-server-bachstudio excel-mcp-server stdio
+uvx excel-mcp-server-bachstudio stdio
 ```
 
 ### 如果遇到模块导入错误
@@ -52,7 +52,7 @@ The server supports three transport methods:
 ### 1. Stdio Transport (for local use)
 
 ```bash
-uvx excel-mcp-server stdio
+uvx excel-mcp-server-bachstudio stdio
 ```
 
 ```json
@@ -60,7 +60,7 @@ uvx excel-mcp-server stdio
    "mcpServers": {
       "excel": {
          "command": "uvx",
-         "args": ["excel-mcp-server", "stdio"]
+         "args": ["excel-mcp-server-bachstudio", "stdio"]
       }
    }
 }
@@ -69,7 +69,7 @@ uvx excel-mcp-server stdio
 ### 2. SSE Transport (Server-Sent Events - Deprecated)
 
 ```bash
-uvx excel-mcp-server sse
+uvx excel-mcp-server-bachstudio sse
 ```
 
 **SSE transport connection**:
@@ -86,7 +86,7 @@ uvx excel-mcp-server sse
 ### 3. Streamable HTTP Transport (Recommended for remote connections)
 
 ```bash
-uvx excel-mcp-server streamable-http
+uvx excel-mcp-server-bachstudio streamable-http
 ```
 
 **Streamable HTTP transport connection**:
@@ -112,11 +112,11 @@ You can also set the `FASTMCP_PORT` environment variable to control the port the
   ```powershell
   $env:EXCEL_FILES_PATH="E:\MyExcelFiles"
   $env:FASTMCP_PORT="8007"
-  uvx excel-mcp-server streamable-http
+  uvx excel-mcp-server-bachstudio streamable-http
   ```
 - Example (Linux/macOS):
   ```bash
-  EXCEL_FILES_PATH=/path/to/excel_files FASTMCP_PORT=8007 uvx excel-mcp-server streamable-http
+  EXCEL_FILES_PATH=/path/to/excel_files FASTMCP_PORT=8007 uvx excel-mcp-server-bachstudio streamable-http
   ```
 
 ### Stdio Transport
